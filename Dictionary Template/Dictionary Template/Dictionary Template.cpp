@@ -6,6 +6,10 @@ int main()
     Dictionary<char, int> dict;
     dict.addPair('a', 1);
     dict.addPair('b', 2);
-    std::cout << dict.getValue('b') << std::endl;
+    dict.getValue('a');
+    dict.getValue('b');
+    //dict.remove('b');
+    //std::cout << dict.getValue('a') << std::endl;
+    //std::cout << dict.getValue('b') << std::endl;
 }
 

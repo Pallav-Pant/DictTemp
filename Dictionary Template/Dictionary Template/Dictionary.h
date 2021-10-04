@@ -19,10 +19,19 @@ public:
 	}
 	V getValue(K key)
 	{
-		return vals.at(keys.getIndex(key));
+		if (keys.getIndex(key) != NULL)
+		{
+			return vals.at(keys.getIndex(key));
+		}
+		else
+		{
+			std::cerr << "Not found" << std::endl;
+			return NULL;
+		}
 	}
 	void remove(K key)
 	{
-
+		keys.removeat(keys.getIndex(key));
+		vals.removeat(keys.getIndex(key));
 	}
 };
