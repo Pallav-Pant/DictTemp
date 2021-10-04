@@ -21,4 +21,8 @@ public:
 	{
 		return vals.at(keys.getIndex(key));
 	}
+	void remove(K key)
+	{
+
+	}
 };
