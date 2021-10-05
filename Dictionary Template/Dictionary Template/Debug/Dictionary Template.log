@@ -1,3 +1,0 @@
-﻿  Dictionary Template.cpp
-C:\Users\pant.30\Desktop\DictTemp\Dictionary Template\Dictionary Template\LinkedList.h(127): warning C4715: 'DynamicList<char>::getIndex': not all control paths return a value
-  Dictionary Template.vcxproj -> C:\Users\pant.30\Desktop\DictTemp\Dictionary Template\Debug\Dictionary Template.exe
