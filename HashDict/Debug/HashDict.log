@@ -1,0 +1,6 @@
+﻿  HashDict.cpp
+C:\Users\pant.30\Desktop\HashDict\HashDict\HashDict.cpp(134,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\pant.30\Desktop\HashDict\HashDict\HashDict.cpp(132): message : while compiling class template member function 'int Dictionary<int>::hash(std::string)'
+C:\Users\pant.30\Desktop\HashDict\HashDict\HashDict.cpp(161): message : see reference to function template instantiation 'int Dictionary<int>::hash(std::string)' being compiled
+C:\Users\pant.30\Desktop\HashDict\HashDict\HashDict.cpp(182): message : see reference to class template instantiation 'Dictionary<int>' being compiled
+  HashDict.vcxproj -> C:\Users\pant.30\Desktop\HashDict\Debug\HashDict.exe
