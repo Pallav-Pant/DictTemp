@@ -40,7 +40,7 @@ public:
         if (headptr == nullptr || tailptr == nullptr)
         {
             headptr = pair;
-            tailptr = pair;
+            tailptr = headptr;
         }
         else if (this->exists(key))
         {
@@ -98,15 +98,14 @@ public:
     {
         return this->size;
     }
-    //Fix this
-   /* ~List()
+
+public:
+    ~List()
     {
-        Pair<V>* temp;
-        while (this->headptr != nullptr)
+        while (size != 0)
         {
-            temp = headptr;
-            headptr = headptr->Next;
-            delete temp;
+            Pair<V>* curr = headptr;
+            remove(curr->key);
         }
-    }*/
+    }
 };

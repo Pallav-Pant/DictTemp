@@ -11,4 +11,7 @@ struct Pair
         this->key = key;
         this->value = value;
     }
+
+    ~Pair() {}
+
 };

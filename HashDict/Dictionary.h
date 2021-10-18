@@ -28,7 +28,7 @@ public:
 
     }
 
-    V read(std::string key)
+    V lookup(std::string key)
     {
         return dict[hash(key)].getValue(key);
     }
@@ -38,16 +38,16 @@ public:
         dict[hash(key)].remove(key);
     }
 
-    void exists(std::string key)
+    void contains(std::string key)
     {
         if (dict[hash(key)].exists(key))
         {
-            std::cout << "The key " << key << " exists in this dictionary." << std::endl;
+            std::cout << "The key \"" << key << "\" exists in this dictionary." << std::endl;
             return;
         }
-        std::cout << "The key " << key << " does not exist in this dictionary." << std::endl;
+        std::cout << "The key \"" << key << "\" does not exist in this dictionary." << std::endl;
     }
 
-    ~Dictionary() {}//Work on this
+    ~Dictionary() {}//Automatically deletes stuff since static array of objects so no code required
 };
 
